@@ -12,8 +12,7 @@ import chainercv
 import chainer.links as L
 
 class FCN(chainer.Chain):
-    # def __init__(self, n_class=21):
-    def __init__(self, n_class=2):
+    def __init__(self, n_class=1):
         super(FCN, self).__init__(
             conv1_1=L.Convolution2D(3, 64, 3, stride=1, pad=1),
             conv1_2=L.Convolution2D(64, 64, 3, stride=1, pad=1),
