@@ -39,35 +39,6 @@ class FCN(chainer.Chain):
             upsample4=L.Deconvolution2D(n_class, n_class, ksize= 4, stride=2, pad=1),
             upsample5=L.Deconvolution2D(n_class, n_class, ksize= 8, stride=4, pad=2),
             upsample =L.Deconvolution2D(n_class, n_class, ksize=16, stride=8, pad=4),
-            # conv1_1 = L.Convolution2D(3, 64, 3, stride=1, pad=100), # padding = 100
-            # conv1_2 = L.Convolution2D(64, 64, 3, stride=1, pad=1),
-
-            # conv2_1 = L.Convolution2D(64, 128, 3, stride=1, pad=1),
-            # conv2_2 = L.Convolution2D(128, 128, 3, stride=1, pad=1),
-            
-            # conv3_1 = L.Convolution2D(128, 256, 3, stride=1, pad=1),
-            # conv3_2 = L.Convolution2D(256, 256, 3, stride=1, pad=1),
-            # conv3_3 = L.Convolution2D(256, 256, 3, stride=1, pad=1),
-            
-            # conv4_1 = L.Convolution2D(256, 512, 3, stride=1, pad=1),
-            # conv4_2 = L.Convolution2D(512, 512, 3, stride=1, pad=1),
-            # conv4_3 = L.Convolution2D(512, 512, 3, stride=1, pad=1),
-
-            # conv5_1 = L.Convolution2D(512, 512, 3, stride=1, pad=1),
-            # conv5_2 = L.Convolution2D(512, 512, 3, stride=1, pad=1),
-            # conv5_3 = L.Convolution2D(512, 512, 3, stride=1, pad=1),
-
-            # fc6 = L.Convolution2D(512, 4096, 7, stride=1, pad=0),
-            # fc7 = L.Convolution2D(4096, 4096, 1, stride=1, pad=0),
-
-            # score_fr = L.Convolution2D(4096, n_class, 1, stride=1, pad=0),
-
-            # upscore2 = L.Deconvolution2D(n_class, n_class, ksize=4, stride=2, pad=0, nobias=True),
-            # upscore8 = L.Deconvolution2D(n_class, n_class, ksize=16, stride=8, pad=0, nobias=True),
-            
-            # score_pool3 = L.Convolution2D(256, n_class, 1, stride=1, pad=0),
-            # score_pool4 = L.Convolution2D(512, n_class, 1, stride=1, pad=0),
-            # upscore_pool4 = L.Deconvolution2D(n_class, n_class, ksize=4, stride=2, pad=0, nobias=True),
         )
         self.train = False
 
