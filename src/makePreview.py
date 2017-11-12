@@ -1,4 +1,4 @@
-# -*- coding:utf-8 -*- 
+# -*- coding:utf-8 -*-
 from PIL import Image
 import codecs
 import os
@@ -30,14 +30,8 @@ for file in os.listdir(IMAGES_PATH):
 #     # result_file = "%s/%s" % (RESULT_PATH, file) # input image
 #     # video.write(result_file)
 #     img = cv2.imread('./out/pred_frame_{0:05d}.png')
-    
+
 #     cv2.namedWindow('window')
 #     cv2.imshow('window', img)
 #     # img = cv2.resize(img, (640,480))
 # video.release()
-
-
-
-    
-
-
