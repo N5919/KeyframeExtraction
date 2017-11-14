@@ -23,5 +23,4 @@ def make_color_map():
         cmap[i, 0] = b
         cmap[i, 1] = g
         cmap[i, 2] = r
-    # return cmap[1:22]
     return cmap[1:3]
